@@ -39,6 +39,7 @@ Follow Installation guide of Pub.dev
 
 
 ## Example
+```
 class _HomeState extends State<Home> {
   bool unlock = false;
   @override
@@ -52,20 +53,27 @@ class _HomeState extends State<Home> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
             Padding(padding: EdgeInsets.only(bottom: 30),child: SizedBox(height: 50,child: FittedBox(child: Text(unlock?"UnLocked":"Locked")))),
-            LockView(height: 300,width: 300,password: [0,1,2,4,6,7,8],onEndPattern: (didUnlocked) {
-              setState(() {
-//                unlock = didUnlocked;
-              });
-              if(didUnlocked){
-              Navigator.push(context, MaterialPageRoute(builder: (c)=>Scaffold(
-                appBar: AppBar(title: Text("Unlocked Content"),),
-                body: Center(child: Text("Unlocked",style: TextStyle(fontSize: 30),),),)));
-              }
-            },)],
+            
+            LockView(
+                  height: 300,
+                  width: 300,
+                  password: [0,1,2,4,6,7,8],
+                  onEndPattern: (didUnlocked) {
+                        setState(() {
+                          unlock = didUnlocked;
+                        });
+                         if(didUnlocked){
+                         Navigator.push(context, MaterialPageRoute(builder: (c)=>Scaffold(
+                              appBar: AppBar(title: Text("Unlocked Content"),),
+                              body: Center(child: Text("Unlocked",style: TextStyle(fontSize: 30),),),)));
+                    }
+                  },
+            )],
           )
       )
     );
   }
+```
 ## Contact Me
 
 I Am Rutvik Rana, Medical Student cum Passionate Coder, Invite You To My [Coding(noob to pro)](https://t.me/coding_noob_to_pro) Channel.
