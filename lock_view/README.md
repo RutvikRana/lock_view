@@ -4,7 +4,7 @@
 LockView - Is used to create classical LockView of 9x9 pattern. Can also used to create any custom pattern.
 
 ## preview
-<img src="https://raw.githubusercontent.com/RutvikRana/lock_view/main/lock_view/video_example/giffy.gif" alt="Example App" width="300" height="300">
+<img src="https://raw.githubusercontent.com/RutvikRana/lock_view/main/lock_view/video_example/giffy.gif" alt="Example App" width="300" height="400">
 
 ## Installation
 Follow Installation guide of Pub.dev
